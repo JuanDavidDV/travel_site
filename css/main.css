@@ -9,7 +9,7 @@
     justify-content: space-around;
     background-color: #FFFFFF;
     align-items: baseline;
-    margin: 1.25em 1.25em 0.625em 1.25em; /*applied to match display as Mock document*/
+    margin: 1.25em 1.25em 0.625em 1.25em; /*Customized margin applied to match display as Mock document*/
 }
 
 .header-page__title {
@@ -40,7 +40,7 @@
 .header-page__navigation__link {
     text-decoration: none;
     color: black;
-    font-size: 0.85em;
+    font-size: 0.85rem;
 }
 
 .hero {
@@ -53,7 +53,7 @@
 
 .hero__container-text {
     align-self: center;
-    text-align: left;
+    text-align: left; /*CONFIRM IF THIS IS VALID FOR "TEXT CONETENT MUST BE LEFT ALIGNED*/
 }
 
 .hero__container-text__title {
@@ -79,10 +79,28 @@
 .hero__container-text__button {
     background-color: #DB7A4E;
     color:  #FFFFFF;
-    width: 11rem;
+    width: 9.5rem;
     padding: 0.75em;
     font-family: inherit;
     border: none;
     border-radius: 30px;
-    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.recommendations {
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.recommendations__images--container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.recommendations__images--container-hawaii, .recommendations__images--container-iceland, .recommendations__images--container-greece {
+    height: 23rem;
 }
