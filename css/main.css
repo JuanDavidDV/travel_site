@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+}
+/*ASK ABOUT FONT, SHOULD I GO TO GGOLE FONT AND GET IT FROM THERE_ OR USE THE ONE IN GLOBAL (SHOW)*/
+.header-page {/*ASK IF THIS IS WHAT THEY MEAN FOR FIX AT THE TOP OF THE PAGE. DO NOT USE FLOAT*/
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    align-items: baseline;
+    margin: 1.25em; /*applied to match display as Mock document*/
+}
+
+.header-page__title {
+    font-size: 1.25rem;
+    margin-right: 27em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo and nav), this to macth Mock document display*/
+}
+
+.header-page__title__link{
+    text-decoration: none;
+    color: #335576;
+}
+
+.header-page__navigation--box {
+    display: inline-block;
+    margin: 0em 0.5em;
+    padding-bottom: 0.50em; /*Generates bottom spacing between current page and underlined */
+}
+
+.alignment--home {
+    margin-left: 0em; /*Removed margin to align nav section on the left*/
+    border-bottom: 0.25rem solid #DB7A4E;
+}
+
+.alignment--greece {
+    margin-right: 0em; /*Removed margin to align nav section on the right*/
+}
+
+.header-page__navigation__link {
+    text-decoration: none;
+    color: black;
+}
+
