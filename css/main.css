@@ -9,12 +9,12 @@
     justify-content: space-around;
     background-color: #FFFFFF;
     align-items: baseline;
-    margin: 1.25em; /*applied to match display as Mock document*/
+    margin: 1.25em 1.25em 0.625em 1.25em; /*applied to match display as Mock document*/
 }
 
 .header-page__title {
     font-size: 1.25rem;
-    margin-right: 27em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo and nav), this to macth Mock document display*/
+    margin-right: 28.75em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo and nav), this to macth Mock document display*/
 }
 
 .header-page__title__link{
@@ -30,7 +30,7 @@
 
 .alignment--home {
     margin-left: 0em; /*Removed margin to align nav section on the left*/
-    border-bottom: 0.25rem solid #DB7A4E;
+    border-bottom: 0.2rem solid #DB7A4E;
 }
 
 .alignment--greece {
@@ -40,5 +40,49 @@
 .header-page__navigation__link {
     text-decoration: none;
     color: black;
+    font-size: 0.85em;
 }
 
+.hero {
+    width: 100%;
+    background-color: #FEFAF5;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 3.25em 5em 3.25em;
+}
+
+.hero__container-text {
+    align-self: center;
+    text-align: left;
+}
+
+.hero__container-text__title {
+    color: #335576;
+    font-size: 2.30rem;
+    width: 40vw;
+    padding-bottom: 1em;
+}
+
+.hero__container-text__paragraph {
+    color: #335576;
+    padding-bottom: 2em;
+    width: 46vw;
+    font-size: 0.9rem;
+}
+
+.hero__container-image--airplane {
+    padding-top: 1.25em;
+    height: 23rem;
+}
+
+/*WHY IS BUTTON NOT USING INHERIT FONT-FAMILY*/
+.hero__container-text__button {
+    background-color: #DB7A4E;
+    color:  #FFFFFF;
+    width: 11rem;
+    padding: 0.75em;
+    font-family: inherit;
+    border: none;
+    border-radius: 30px;
+    
+}
