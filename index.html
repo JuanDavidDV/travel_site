@@ -40,27 +40,67 @@
                     </a>
                 </div>
                 <div class="hero__container-image">
-                    <img src="assets/Images/hero.png" class="hero__container-image--airplane">
+                    <img src="assets/Images/hero.png" class="hero__container-image--airplane" alt="hero-airplane-image">
                 </div>
             </div>
             <div class="recommendations">
                 <h2 class="recommendations__title">Recommendations</h2>
-                <div class="recommendations__images--container">
-                    <img src="assets/Images/hawaii.jpg" class="recommendations__images--container-hawaii">
-                    <img src="assets/Images/iceland.jpg" class="recommendations__images--container-iceland">
-                    <img src="assets/Images/greece.jpg" class="recommendations__images--container-greece">
+                <div class="recommendations__destinations">
+                    <span> <!--Span used to add a margin around the image, and to make the image link exclusively clickable and not the surroundings-->
+                        <a href="pages/hawaii.html">
+                            <div class="recommendations__destinations__card">
+                                <p class="recommendations__destinations__card__text">Hawaii</p>
+                                <img src="assets/Images/hawaii.jpg" class="recommendations__destinations__card__image" alt="hawaii-image">             
+                            </div>
+                        </a>    
+                    </span>
+                    <span> <!--Span used to add a margin around the image, and to make the image link exclusively clickable and not the surroundings-->
+                        <a href="pages/iceland.html">
+                            <div class="recommendations__destinations__card">
+                                <p class="recommendations__destinations__card__text">Iceland</p>
+                                <img src="assets/Images/iceland.jpg" class="recommendations__destinations__card__image" alt="iceland-image">
+                            </div>
+                        </a>
+                    </span>
+                    <span> <!--Span used to add a margin around the image, and to make the image link exclusively clickable and not the surroundings-->
+                        <a href="pages/greece.html">      
+                            <div class="recommendations__destinations__card">             
+                                <p class="recommendations__destinations__card__text">Greece</p>      
+                                <img src="assets/Images/greece.jpg" class="recommendations__destinations__card__image" alt="greece-image">
+                            </div>
+                        </a>  
+                    </span>
                 </div>
             </div>
-
-
-
         </main>
-
-
-
-
-
-
+        <footer class="footer-page">
+            <div class="footer-page__box--contact">
+                <h2 class="footer-page__title">Contact</h2>
+                <h3 class="footer-page__subtitle">EMAIL</h3>
+                <p class="footer-page__paragraph">info@travelsite.com</p>
+            </div>
+            <div class="footer-page__box--hours">
+                <h2 class="footer-page__title">Hours</h2>
+                <div class="footer-page__box--date-and-time--allignment">
+                    <h3 class="footer-page__subtitle">MONDAY - FRIDAY</h3>
+                    <p class="footer-page__paragraph">9:00 AM - 5:00 PM</p>
+                </div>
+                <div class="footer-page__box--date-and-time">
+                    <h3 class="footer-page__subtitle">SATURDAY</h3>
+                    <p class="footer-page__paragraph">10:00 AM - 4:00PM</p>
+                </div>
+                <div class="footer-page__box--date-and-time">
+                    <h3 class="footer-page__subtitle">SUNDAY</h3>
+                    <p class="footer-page__paragraph">Closed</p>
+                </div>
+            </div>
+            <div class="footer-page__box--social">
+                <h2 class="footer-page__title">Social</h2>
+                <img src="assets/Icons/icon-instagram.png" class="footer-page__logo" alt="instagram-logo">
+                <img src="assets/Icons/icon-facebook.png" class="footer-page__logo" alt="facebook-logo">
+                <img src="assets/Icons/icon-twitter.png" class="footer-page__logo" alt="twitter-logo">
+            </div>
+        </footer>
 
     </body>
 </html>

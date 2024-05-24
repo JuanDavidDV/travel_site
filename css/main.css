@@ -92,15 +92,105 @@ button:hover {
 
 .recommendations {
     background-color: #FFFFFF;
-    width: 100%;
+    padding: 1.25em;
+    margin: 1.25em;
 }
 
-.recommendations__images--container {
+.recommendations__title {
+    margin-left: 2em;
+    color: #335576;
+    font-size: 1.35rem;
+}
+
+.recommendations__destinations {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 0em 1.25em 1.25em 1.25em;
+}
+
+span { /*Adds margins to the images. used a span to prevent link bing clickable outside of the image (by image padding/margin)*/
+    margin: 1.25em; 
+}
+.recommendations__destinations__card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 
 }
 
-.recommendations__images--container-hawaii, .recommendations__images--container-iceland, .recommendations__images--container-greece {
-    height: 23rem;
+.recommendations__destinations__card__text {
+   position: absolute;
+   color: white;
+   padding: 0.75em;
+   font-size: 1.5rem; 
+   font-weight: 700;
+}
+
+.recommendations__destinations__card__image {
+    height: 25rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+.footer-page {
+    background-color: #FEFAF5;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-page__box--contact {
+    display: inline-block;
+    padding: 1.75em 3em 1.75em  4.75em;
+}
+
+.footer-page__box--hours {
+    display: inline-block;
+    padding: 1.75em 3em;
+}
+
+.footer-page__box--social {
+    display: inline-block;
+    padding: 1.75em 2em;
+}
+
+
+
+.footer-page__box--date-and-time--allignment{
+    display: inline-block;
+    padding: 0em 1.25em 0em 0em;
+} 
+
+
+.footer-page__box--date-and-time {
+    display: inline-block;
+    padding: 0em 1.25em;
+}
+
+.footer-page__title {
+    display: flex;
+    color: #335576;
+    padding: 1em 1em 1em 0em;
+}
+
+.footer-page__subtitle {
+    color: #DB7A4E;
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding-bottom: 1em;
+}
+
+.footer-page__paragraph {
+    color: #335576;
+    font-size: 0.9rem;
+    padding-bottom: 1.50em; /*Customized padding to match display as in the Mock document adding precise padding bottom*/
+}
+
+.footer-page__logo{
+    box-sizing:content-box; /*Used to display logos as in the Mock doc*/
+    height: 1.5rem;
+    padding-right: 2em;
+    padding-top: 0.75em;
 }
