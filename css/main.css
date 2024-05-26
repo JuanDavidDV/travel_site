@@ -53,7 +53,7 @@
 
 .hero__container-text {
     align-self: center;
-    text-align: left; /*CONFIRM IF THIS IS VALID FOR "TEXT CONETENT MUST BE LEFT ALIGNED*/
+    text-align: left; /*CONFIRM IF THIS IS VALID FOR "TEXT CONTENT MUST BE LEFT ALIGNED*/
 }
 
 .hero__container-text__title {
@@ -105,18 +105,17 @@ button:hover {
 .recommendations__destinations {
     display: flex;
     justify-content: center;
-    padding: 0em 1.25em 1.25em 1.25em;
+    padding: 0.5em 1.25em 1.25em 1.25em;   /*Fixed padding to match layout as in the Mock doc*/
 }
 
-span { /*Adds margins to the images. used a span to prevent link bing clickable outside of the image (by image padding/margin)*/
-    margin: 1.25em; 
+.recommendations__destinations--link {
+    margin: 1.25em; /*adds a margin around the images, and to make the image link exclusively clickable in the image, and not the surroundings outside of the image*/
 }
 .recommendations__destinations__card {
     position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-
 }
 
 .recommendations__destinations__card__text {
@@ -138,7 +137,6 @@ span { /*Adds margins to the images. used a span to prevent link bing clickable 
     background-color: #FEFAF5;
     display: flex;
     justify-content: center;
-
 }
 
 .footer-page__box--contact {
@@ -156,11 +154,9 @@ span { /*Adds margins to the images. used a span to prevent link bing clickable 
     padding: 1.75em 2em;
 }
 
-
-
 .footer-page__box--date-and-time--allignment{
     display: inline-block;
-    padding: 0em 1.25em 0em 0em;
+    padding: 0em 1.25em 0em 0em; /*Customized padding to align information to make it look as in the Mock doc*/
 } 
 
 
@@ -188,9 +184,13 @@ span { /*Adds margins to the images. used a span to prevent link bing clickable 
     padding-bottom: 1.50em; /*Customized padding to match display as in the Mock document adding precise padding bottom*/
 }
 
+.footer-page__box--social--link{
+    text-decoration: none;
+    margin-right: 2em;
+}
+
 .footer-page__logo{
     box-sizing:content-box; /*Used to display logos as in the Mock doc*/
     height: 1.5rem;
-    padding-right: 2em;
-    padding-top: 0.75em;
+    margin-top: 0.75em;
 }
