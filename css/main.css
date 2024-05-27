@@ -3,8 +3,8 @@
     margin: 0rem;
     padding: 0rem;
 }
-/*ASK ABOUT FONT, SHOULD I GO TO GGOLE FONT AND GET IT FROM THERE_ OR USE THE ONE IN GLOBAL (SHOW)*/
-.header-page {/*ASK IF THIS IS WHAT THEY MEAN FOR FIX AT THE TOP OF THE PAGE. DO NOT USE FLOAT*/
+/*ASK ABOUT FONT, SHOULD I GO TO GGOLE FONT AND GET IT FROM THERE_ OR USE THE ONE IN GLOBAL (SHOW). ASK IF THIS IS WHAT THEY MEAN FOR FIX AT THE TOP OF THE PAGE. DO NOT USE FLOAT*/
+.header-page {
     display: flex;
     justify-content: space-around;
     background-color: #FFFFFF;
@@ -12,14 +12,14 @@
     margin: 1.25em 1.25em 0.625em 1.25em; /*Customized margin applied to match display as Mock document*/
 }
 
-.header-page__title {
-    font-size: 1.25rem;
-    margin-right: 28.75em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo and nav), this to macth Mock document display*/
+.header-page__link {
+    text-decoration: none;
 }
 
-.header-page__title__link{
-    text-decoration: none;
+.header-page__link__title {
+    font-size: 1.20rem;
     color: #335576;
+    margin-right: 30em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo and nav), this to macth Mock document display*/
 }
 
 .header-page__navigation--box {
@@ -108,7 +108,7 @@ button:hover {
     padding: 0.5em 1.25em 1.25em 1.25em;   /*Fixed padding to match layout as in the Mock doc*/
 }
 
-.recommendations__destinations--link {
+.recommendations__destinations__link {
     margin: 1.25em; /*adds a margin around the images, and to make the image link exclusively clickable in the image, and not the surroundings outside of the image*/
 }
 .recommendations__destinations__card {
@@ -120,7 +120,7 @@ button:hover {
 
 .recommendations__destinations__card__text {
    position: absolute;
-   color: white;
+   color: #FFFFFF;
    padding: 0.75em;
    font-size: 1.5rem; 
    font-weight: 700;
@@ -184,7 +184,7 @@ button:hover {
     padding-bottom: 1.50em; /*Customized padding to match display as in the Mock document adding precise padding bottom*/
 }
 
-.footer-page__box--social--link{
+.footer-page__box--social__link{
     text-decoration: none;
     margin-right: 2em;
 }
