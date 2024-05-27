@@ -67,6 +67,16 @@
     width: 100%;
 }
 
+.destination__container--Greece {
+    background-image: url(../assets/Images/greece.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: 43rem;
+}
+
 .destination__container__title {
     font-size: 4rem;
     color: #FFFFFF;
@@ -95,7 +105,7 @@
 
 .destination__container__itinerary__card__title {
     border-bottom: 0.125rem solid black;
-    width: 15rem;
+    width: 14rem;
 }
 
 .destination__container__itinerary__card--list {
@@ -103,7 +113,7 @@
 }
 
 .destination__container__itinerary__card--activities {
-    margin: 1.25em;  /*Used a 1.25em margin to match Mock document*/
+    margin: 1em;  /*Used a 1.25em margin to match Mock document*/
     padding: 1em; /*Used a 1em padding to match Mock document*/
     background-color: #FEFAF5;
     font-size: 1em;
