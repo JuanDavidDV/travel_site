@@ -28,12 +28,12 @@
     padding-bottom: 0.50em; /*Generates bottom spacing between current page and underlined */
 }
 
-.alignment--home {
+.header-page__navigation__link--current-site {
     margin-left: 0em; /*Removed margin to align nav section on the left*/
     border-bottom: 0.2rem solid #DB7A4E;
 }
 
-.alignment--greece {
+.header-page__navigation__alignment--greece {
     margin-right: 0em; /*Removed margin to align nav section on the right*/
 }
 
@@ -186,11 +186,11 @@ button:hover {
 
 .footer-page__box--social__link{
     text-decoration: none;
-    margin-right: 2em;
 }
 
 .footer-page__logo{
     box-sizing:content-box; /*Used to display logos as in the Mock doc*/
     height: 1.5rem;
     margin-top: 0.75em;
+    margin-right: 2em;
 }

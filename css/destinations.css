@@ -9,7 +9,7 @@
     justify-content: space-around;
     background-color: #FFFFFF;
     align-items: baseline;
-    margin: 1.25em 1.25em 0.625em 1.25em; /*Customized margin applied to match display as Mock document*/
+    margin: 1.25em 1.25em 0.625em 1.25em; /*Customized margin applied to match header display as Mock document*/
 }
 
 .header-page__link {
@@ -28,14 +28,14 @@
     padding-bottom: 0.50em; /*Generates bottom spacing between current page and underlined */
 }
 
-.alignment--home {
+.header-page__navigation__alignment--home {
     margin-left: 0em;   /*Removed margin to align nav section on the left*/
 }
 
-.header-page__navigation__link--Hawaii {
+.header-page__navigation__link--current-site {
     border-bottom: 0.2rem solid  #DB7A4E;
 }
-.alignment--greece {
+.header-page__navigation__alignment--greece {
     margin-right: 0em;  /*Removed margin to align nav section on the right*/
 }
 
@@ -45,7 +45,7 @@
     font-size: 0.85rem;
 }
 
-.destination__container {
+.destination__container--Hawaii {
     background-image: url("../assets/Images/hawaii.jpg");
     background-position: center;
     background-size: cover;
@@ -53,7 +53,18 @@
     height: 43rem;
     position: relative;
     display: flex;
+    width: 100%;
+}
 
+.destination__container--Iceland {
+    background-image: url(../assets/Images/iceland.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 43rem;
+    position: relative;
+    display: flex;
+    width: 100%;
 }
 
 .destination__container__title {
@@ -87,7 +98,7 @@
     width: 15rem;
 }
 
-ul {
+.destination__container__itinerary__card--list {
     list-style-type: none;
 }
 
@@ -131,7 +142,6 @@ ul {
 }
 
 .footer-page__title {
-    display: flex;
     color: #335576;
     padding: 1em 1em 1em 0em;
 }
@@ -150,12 +160,12 @@ ul {
 }
 
 .footer-page__box--social__link{
-    text-decoration: none;
-    margin-right: 2em;
+    text-decoration: none;  
 }
 
 .footer-page__logo{
     box-sizing:content-box; /*Used to display logos as in the Mock doc*/
     height: 1.5rem;
     margin-top: 0.75em;
+    margin-right: 2em;
 }
