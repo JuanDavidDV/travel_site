@@ -3,6 +3,7 @@
     margin: 0rem;
     padding: 0rem;
 }
+/*ASK IF I CAN INCLUDE HEADER AND FOOTER IN GLOBAL CSS*/
 /*ASK ABOUT FONT, SHOULD I GO TO GGOLE FONT AND GET IT FROM THERE_ OR USE THE ONE IN GLOBAL (SHOW)*/
 .header-page {
     display: flex;
@@ -44,6 +45,11 @@
     text-decoration: none;
     color: black;
     font-size: 0.85rem;
+}
+
+.header-page__navigation__link:hover {
+    border-bottom: 0.2rem solid rgb(137, 137, 204);
+    padding-bottom: 0.63em;
 }
 
 .destination__container--Hawaii {

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"> <!--ASK ABOUT THIS. WHAT IS IT? DO I NEED TO CHNAGE THIS FOR THE TRAVEL SITE -->
+        <title>Registration Form</title>
+        <link rel="stylesheet" type="text/css" href="../css/global.css">
+        <link rel="stylesheet" type="text/css" href="../css/registration.css">
+    </head>
+    <body>
+        <header class="header-page">
+            <a href="../index.html" class="header-page__link">
+                <h3 class="header-page__link__title">Travel Site</h3>
+            </a>
+            <nav>                 
+                <ul>
+                    <li class="header-page__navigation--box header-page__navigation__alignment--home">       <!--Creates container to distribute nav links by inline-blocks-->
+                        <a class="header-page__navigation__link" href="../index.html">Home</a>
+                    </li>
+                    <li class="header-page__navigation--box">                       <!--Creates container to distribute nav links by inline-blocks-->
+                        <a class="header-page__navigation__link" href="hawaii.html">Hawaii</a>
+                    </li>
+                    <li class="header-page__navigation--box">                       <!--Creates container to distribute nav links by inline-blocks-->
+                        <a class="header-page__navigation__link" href="iceland.html">Iceland</a>
+                    </li>
+                    <li class="header-page__navigation--box header-page__navigation__alignment--greece">     <!--Creates container to distribute nav links by inline-blocks-->
+                        <a class="header-page__navigation__link" href="greece.html">Greece</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="registration">
+                <div class="registration__info">
+                    <h1 class="registration__info__title">Welcome to the Registration Form</h1>
+                    <label for="registration__info__destination-select" class="registration__info__destination-select">Please select your trip:</label>
+                    <select name="destinations" id="registration__info__destination-select">
+                        <option value="">-- Please choose an option --</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Iceland">Iceland</option>
+                        <option value="Greece">Greece</option>
+                    </select>
+                    <div class="registration__info--personal-information">
+                        <label for="first-name"><br>Please enter your first name:</label>
+                            <input type="text">
+                        <label for="last-name"><br>Please enter your last name:</label>
+                            <input type="text">
+                        <label for="age"><br>Please enter your age:</label>
+                            <input type="number">
+                        <label for="phone-number"><br>Please enter your phone number:</label>
+                            <input type="tel">
+                        <label for="email-address"><br>Please enter your email address:</label>
+                            <input type="email">
+                    </div>
+                    <p class="registration__info__text">Once you have completed the information above, please click on "Submit" to send your Registration Form.</p>
+                    <a href="../index.html">
+                        <button class="destination__info__button" type="button">Submit</button>
+                    </a>
+                </div>
+                <div class="registration__pictures">
+                    <img src="../assets/Images/hawaii.jpg" class="registration__pictures__images">
+                    <img src="../assets/Images/iceland.jpg" class="registration__pictures__images">
+                    <img src="../assets/Images/greece.jpg" class="registration__pictures__images">
+                </div>
+            </div>
+        </main>
+        <footer class="footer-page">
+            <div class="footer-page__box--contact"> <!--Creates container to distribute infomration-->
+                <h2 class="footer-page__title">Contact</h2>
+                <h3 class="footer-page__subtitle">EMAIL</h3>
+                <p class="footer-page__paragraph">info@travelsite.com</p>
+            </div>
+            <div class="footer-page__box--hours">   <!--Creates container to distribute information-->
+                <h2 class="footer-page__title">Hours</h2>
+                <div class="footer-page__box--date-and-time--allignment">   <!--Creates subcontainer to distribute information by inline-blocks-->
+                    <h3 class="footer-page__subtitle">MONDAY - FRIDAY</h3>
+                    <p class="footer-page__paragraph">9:00 AM - 5:00 PM</p>
+                </div>
+                <div class="footer-page__box--date-and-time">               <!--Creates subcontainer to distribute information by inline-blocks-->
+                    <h3 class="footer-page__subtitle">SATURDAY</h3>
+                    <p class="footer-page__paragraph">10:00 AM - 4:00 PM</p>
+                </div>
+                <div class="footer-page__box--date-and-time--allignment">   <!--Creates subcontainer to distribute information by inline-blocks-->
+                    <h3 class="footer-page__subtitle">SUNDAY</h3>
+                    <p class="footer-page__paragraph">Closed</p>
+                </div>
+            </div>
+            <div class="footer-page__box--social">  <!--Creates container to distribute information-->
+                <h2 class="footer-page__title">Social</h2>
+                <a class="footer-page__box--social__link" href="https://www.instagram.com" target="_blank">
+                    <img src="../assets/Icons/icon-instagram.png" class="footer-page__logo" alt="instagram-logo">
+                </a>
+                <a class="footer-page__box--social__link" href="https://www.facebook.com" target="_blank">
+                    <img src="../assets/Icons/icon-facebook.png" class="footer-page__logo" alt="facebook-logo">
+                </a>
+                <a class="footer-page__box--social__link" href="https://x.com" target="_blank">
+                    <img src="../assets/Icons/icon-twitter.png" class="footer-page__logo" alt="twitter-logo">
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
