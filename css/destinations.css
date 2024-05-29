@@ -52,9 +52,8 @@
     background-size: cover;
     width: 100%;
     height: 43rem;
-    position: relative;
     display: flex;
-    width: 100%;
+    position: relative;
 }
 
 .destination__container--Iceland {
@@ -63,9 +62,8 @@
     background-size: cover;
     width: 100%;
     height: 43rem;
-    position: relative;
     display: flex;
-    width: 100%;
+    position: relative;
 }
 
 .destination__container--Greece {
@@ -73,17 +71,16 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    position: relative;
     display: flex;
     height: 43rem;
+    position: relative;
 }
 
 .destination__container__title {
     font-size: 4rem;
     color: #FFFFFF;
     position: absolute;
-    align-self: flex-start;
-    padding: 1.25em 1.25em 1.25em 1.5em;
+    padding: 0.90em 0em 0em 1.5em;    /*Customized padding applied to match display as Mock document*/
 }
 
 .destination__container__itinerary {
@@ -91,12 +88,12 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 6em;
+    margin-top: 4.5em;
 }
 
 .destination__container__itinerary__card {
     background-color: #FFFFFF;
-    margin: 1.25em;
+    margin: 1em;
     padding: 0.80em;
     height: 23rem;
     border-radius: 0.3125rem;
@@ -107,7 +104,7 @@
 .destination__container__itinerary__card__title {
     border-bottom: 0.125rem solid black;
     width: 14rem;
-    margin-bottom: 1.25em; /*added to include space between day, and activities. This to make it look as the Mock doc*/
+    margin-bottom: 1.50em; /*added to include space between day, and activities. This to make it look as the Mock doc*/
 }
 
 .destination__container__itinerary__card--list {
