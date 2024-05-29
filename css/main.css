@@ -19,18 +19,21 @@
 .header-page__link__title {
     font-size: 1.20rem;
     color: #335576;
-    margin-right: 30em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo and nav), this to macth Mock document display*/
+    margin-right: 30em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
 }
 
 .header-page__navigation--box {
     display: inline-block;
-    margin: 0em 0.5em;
+    margin: 0em 0.5em;  /*Adds spacing between nav links */
     padding-bottom: 0.50em; /*Generates bottom spacing between current page and underlined */
 }
 
+.header-page__navigation__alignment--home {
+    margin-left: 0em;   /*Removed margin to align nav section on the left*/
+}
+
 .header-page__navigation__link--current-site {
-    margin-left: 0em; /*Removed margin to align nav section on the left*/
-    border-bottom: 0.2rem solid #DB7A4E;
+    border-bottom: 0.2rem solid  #DB7A4E;
 }
 
 .header-page__navigation__alignment--greece {
@@ -70,20 +73,20 @@
     font-size: 0.9rem;
 }
 
-.hero__container-image--airplane {
-    padding-top: 1.25em;
-    height: 23rem;
-}
-
 /*WHY IS BUTTON NOT USING INHERIT FONT-FAMILY*/
 .hero__container-text__button {
     background-color: #DB7A4E;
     color:  #FFFFFF;
-    width: 9.5rem;
+    width: 10rem;
     padding: 0.75em;
     font-family: inherit;
     border: none;
-    border-radius: 30px;
+    border-radius: 1.875rem;
+}
+
+.hero__container-image--airplane {
+    padding-top: 1.25em;    /*padding added to match display layout as the Mock doc*/
+    height: 24rem;
 }
 
 button:hover {
@@ -112,7 +115,6 @@ button:hover {
     margin: 1.25em; /*adds a margin around the images, and to make the image link exclusively clickable in the image, and not the surroundings outside of the image*/
 }
 .recommendations__destinations__card {
-    position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -136,27 +138,25 @@ button:hover {
 .footer-page {
     background-color: #FEFAF5;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .footer-page__box--contact {
-    display: inline-block;
-    padding: 1.75em 3em 1.75em  4.75em;
+    padding: 1.75em 0em 1.75em 4.75em;  /*Customized padding to match footer display as in the Mock document*/
+    margin-left: 4.5em;
 }
 
 .footer-page__box--hours {
-    display: inline-block;
-    padding: 1.75em 3em;
+    padding: 1.75em 0em;
 }
 
 .footer-page__box--social {
-    display: inline-block;
-    padding: 1.75em 2em;
+    padding: 1.75em 2.75em 1.75em 0em;  /*Customized padding to match footer display as in the Mock document*/
+    margin-right: 4.5em;
 }
 
 .footer-page__box--date-and-time--allignment{
-    display: inline-block;
-    padding: 0em 1.25em 0em 0em; /*Customized padding to align information to make it look as in the Mock doc*/
+    display: inline-block; 
 } 
 
 
@@ -166,7 +166,6 @@ button:hover {
 }
 
 .footer-page__title {
-    display: flex;
     color: #335576;
     padding: 1em 1em 1em 0em;
 }
@@ -189,7 +188,6 @@ button:hover {
 }
 
 .footer-page__logo{
-    box-sizing:content-box; /*Used to display logos as in the Mock doc*/
     height: 1.5rem;
     margin-top: 0.75em;
     margin-right: 2em;
