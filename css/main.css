@@ -3,54 +3,6 @@
     margin: 0rem;
     padding: 0rem;
 }
-/*ASK IF I CAN INCLUDE HEADER AND FOOTER IN GLOBAL CSS*/
-/*ASK ABOUT FONT, SHOULD I GO TO GGOLE FONT AND GET IT FROM THERE_ OR USE THE ONE IN GLOBAL (SHOW). ASK IF THIS IS WHAT THEY MEAN FOR FIX AT THE TOP OF THE PAGE. DO NOT USE FLOAT*/
-.header-page {
-    display: flex;
-    justify-content: space-around;
-    background-color: #FFFFFF;
-    align-items: baseline;
-    margin: 1.25em 1.25em 0.625em 1.25em; /*Customized margin applied to match display as Mock document*/
-}
-
-.header-page__link {
-    text-decoration: none;
-}
-
-.header-page__link__title {
-    font-size: 1.20rem;
-    color: #335576;
-    margin-right: 30em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
-}
-
-.header-page__navigation--box {
-    display: inline-block;
-    margin: 0em 0.5em;  /*Adds spacing between nav links */
-    padding-bottom: 0.50em; /*Generates bottom spacing between current page and underlined */
-}
-
-.header-page__navigation__alignment--home {
-    margin-left: 0em;   /*Removes margin of "home" link, in the nav section, to align nav section to the left*/
-}
-
-.header-page__navigation__link--current-site {
-    border-bottom: 0.2rem solid  #DB7A4E;
-}
-
-.header-page__navigation__alignment--greece {
-    margin-right: 0em; /*Removed margin of "Greece" link, in the nav section, to align nav section to the right*/
-}
-
-.header-page__navigation__link {
-    text-decoration: none;
-    color: black;
-    font-size: 0.85rem;
-}
-
-.header-page__navigation__link:hover {
-    border-bottom: 0.2rem solid rgb(137, 137, 204);
-    padding-bottom: 0.63em;
-}
 
 .hero {
     width: 100%;
@@ -145,62 +97,4 @@ button:hover {
 .recommendations__destinations__link:hover {
     border-radius: 0.3125rem;
     box-shadow: 1rem 1rem 1rem rgba(96, 143, 87, 0.7);
-}
-
-.footer-page {
-    background-color: #FEFAF5;
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer-page__box--contact {
-    padding: 1.75em 0em 1.75em 4.75em;  /*Customized padding to match footer display as in the Mock document*/
-    margin-left: 4.5em;
-}
-
-.footer-page__box--hours {
-    padding: 1.75em 0em;
-}
-
-.footer-page__box--social {
-    padding: 1.75em 2.75em 1.75em 0em;  /*Customized padding to match footer display as in the Mock document*/
-    margin-right: 4.5em;
-}
-
-.footer-page__box--date-and-time--allignment{
-    display: inline-block; 
-} 
-
-
-.footer-page__box--date-and-time {
-    display: inline-block;
-    padding: 0em 1.25em;
-}
-
-.footer-page__title {
-    color: #335576;
-    padding: 1em 1em 1em 0em;
-}
-
-.footer-page__subtitle {
-    color: #DB7A4E;
-    font-size: 0.6rem;
-    font-weight: 500;
-    padding-bottom: 1em;
-}
-
-.footer-page__paragraph {
-    color: #335576;
-    font-size: 0.9rem;
-    padding-bottom: 1.50em; /*Customized padding to match display as in the Mock document adding precise padding bottom*/
-}
-
-.footer-page__box--social__link{
-    text-decoration: none;
-}
-
-.footer-page__logo{
-    height: 1.5rem;
-    margin-top: 0.75em;
-    margin-right: 2em;
 }
