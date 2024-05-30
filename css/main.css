@@ -143,6 +143,7 @@ button:hover {
 }
 /*ASK IF THEY WILL ACCEPT THIS ANIMATION*/
 .recommendations__destinations__link:hover {
+    border-radius: 0.3125rem;
     box-shadow: 1rem 1rem 1rem rgba(96, 143, 87, 0.7);
 }
 
