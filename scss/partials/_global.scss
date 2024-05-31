@@ -20,16 +20,36 @@ body {
     text-decoration: none;
 }
 
-.header-page__link__title {
-    font-size: 1.20rem;
-    color: #335576;
-    margin-right: 30em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
+@media (min-width: 768px) {
+    .header-page__link__title {
+        font-size: 1.50rem;
+        color: #335576;
+        margin-right: 10em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
+    } 
 }
 
-.header-page__navigation--box {
-    display: inline-block;
-    margin: 0em 0.5em;  /*Adds spacing between nav links */
-    padding-bottom: 0.50em; /*Generates bottom spacing between current page and underlined */
+@media (min-width: 1280px) {
+    .header-page__link__title {
+        font-size: 1.20rem;
+        color: #335576;
+        margin-right: 30em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
+    }
+}
+
+@media (min-width: 768px) {
+    .header-page__navigation--box {
+        display: inline-block;
+        margin: 0em 0.25em;  /*Adds spacing between nav links */
+        padding-bottom: 0.50em; /*Generates bottom spacing between current page and underlined */
+    }
+}
+
+@media (min-width: 1280px) {
+    .header-page__navigation--box {
+        display: inline-block;
+        margin: 0em 0.5em;  /*Adds spacing between nav links */
+        padding-bottom: 0.50em; /*Generates bottom spacing between current page and underlined */
+    }
 }
 
 .header-page__navigation__alignment--home {
@@ -44,15 +64,26 @@ body {
     margin-right: 0em; /*Removed margin of "Greece" link, in the nav section, to align nav section to the right*/
 }
 
-.header-page__navigation__link {
-    text-decoration: none;
-    color: black;
-    font-size: 0.85rem;
+@media (min-width: 768px) {
+    .header-page__navigation__link {
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+    }
 }
+
+@media (min-width: 1280px) {
+    .header-page__navigation__link {
+        text-decoration: none;
+        color: black;
+        font-size: 0.85rem;
+    }
+}
+
 
 .header-page__navigation__link:hover {
     border-bottom: 0.2rem solid rgb(137, 137, 204);
-    padding-bottom: 0.63em;
+    padding-bottom: 0.50em;
 }
 
 .footer-page {

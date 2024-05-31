@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*ASK IF THIS IS THE CORRECT FONT*/
+}
+
+.header-page {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFFFFF;
+  align-items: baseline;
+  margin: 1.25em 1.25em 0.625em 1.25em; /*Customized margin applied to match display as Mock document*/
+}
+
+.header-page__link {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .header-page__link__title {
+    font-size: 1.5rem;
+    color: #335576;
+    margin-right: 10em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
+  }
+}
+@media (min-width: 1280px) {
+  .header-page__link__title {
+    font-size: 1.2rem;
+    color: #335576;
+    margin-right: 30em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
+  }
+}
+@media (min-width: 768px) {
+  .header-page__navigation--box {
+    display: inline-block;
+    margin: 0em 0.25em; /*Adds spacing between nav links */
+    padding-bottom: 0.5em; /*Generates bottom spacing between current page and underlined */
+  }
+}
+@media (min-width: 1280px) {
+  .header-page__navigation--box {
+    display: inline-block;
+    margin: 0em 0.5em; /*Adds spacing between nav links */
+    padding-bottom: 0.5em; /*Generates bottom spacing between current page and underlined */
+  }
+}
+.header-page__navigation__alignment--home {
+  margin-left: 0em; /*Removes margin of "home" link, in the nav section, to align nav section to the left*/
+}
+
+.header-page__navigation__link--current-site {
+  border-bottom: 0.2rem solid #DB7A4E;
+}
+
+.header-page__navigation__alignment--greece {
+  margin-right: 0em; /*Removed margin of "Greece" link, in the nav section, to align nav section to the right*/
+}
+
+@media (min-width: 768px) {
+  .header-page__navigation__link {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .header-page__navigation__link {
+    text-decoration: none;
+    color: black;
+    font-size: 0.85rem;
+  }
+}
+.header-page__navigation__link:hover {
+  border-bottom: 0.2rem solid rgb(137, 137, 204);
+  padding-bottom: 0.5em;
+}
+
+.footer-page {
+  background-color: #FEFAF5;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-page__box--contact {
+  padding: 1.75em 0em 1.75em 4.75em; /*Customized padding to match footer display as in the Mock document*/
+  margin-left: 4.5em;
+}
+
+.footer-page__box--hours {
+  padding: 1.75em 0em;
+}
+
+.footer-page__box--social {
+  padding: 1.75em 2.75em 1.75em 0em; /*Customized padding to match footer display as in the Mock document*/
+  margin-right: 4.5em;
+}
+
+.footer-page__box--date-and-time--allignment {
+  display: inline-block;
+}
+
+.footer-page__box--date-and-time {
+  display: inline-block;
+  padding: 0em 1.25em;
+}
+
+.footer-page__title {
+  color: #335576;
+  padding: 1em 1em 1em 0em;
+}
+
+.footer-page__subtitle {
+  color: #DB7A4E;
+  font-size: 0.6rem;
+  font-weight: 500;
+  padding-bottom: 1em;
+}
+
+.footer-page__paragraph {
+  color: #335576;
+  font-size: 0.9rem;
+  padding-bottom: 1.5em; /*Customized padding to match display as in the Mock document adding precise padding bottom*/
+}
+
+.footer-page__box--social__link {
+  text-decoration: none;
+}
+
+.footer-page__logo {
+  height: 1.5rem;
+  margin-top: 0.75em;
+  margin-right: 2em;
+}
+
+/*Removes margin, and padding from the body around website, applied to match display from Mock docuemnt*/
+/*Added box-sizing: border-box, to prevent main containers, and elements, lose consistent measurements.*/
+* {
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.hero {
+  width: 100%;
+  background-color: #FEFAF5;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 3.25em 5em 3.25em; /*Fixed margin to match display hero section layout as in the Mock doc*/
+}
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+  }
+}
+.hero__container-text {
+  align-self: center;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .hero__container-text__title {
+    color: #335576;
+    font-size: 3rem;
+    width: 40vw;
+    padding-bottom: 1em;
+  }
+}
+@media (min-width: 768px) and (min-width: 1280px) {
+  .hero__container-text__title {
+    color: #335576;
+    font-size: 2.3rem;
+    width: 40vw;
+    padding-bottom: 1em;
+  }
+}
+
+.hero__container-text__paragraph {
+  color: #335576;
+  padding-bottom: 2em;
+  width: 46vw;
+  font-size: 0.9rem;
+}
+
+/*WHY IS BUTTON NOT USING INHERIT FONT-FAMILY*/
+.hero__container-text__button {
+  background-color: #DB7A4E;
+  color: #FFFFFF;
+  width: 10rem;
+  padding: 0.75em;
+  font-family: inherit;
+  border: none;
+  border-radius: 1.875rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .hero__container-image--airplane {
+    padding-top: 1.25em; /*padding added to match display layout as the Mock doc*/
+    width: 24rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__container-image--airplane {
+    padding-top: 1.25em; /*padding added to match display layout as the Mock doc*/
+    height: 24rem;
+  }
+}
+.recommendations {
+  background-color: #FFFFFF;
+  padding: 1.25em;
+  margin: 1.25em;
+}
+
+.recommendations__title {
+  margin-left: 2em;
+  color: #335576;
+  font-size: 1.35rem;
+}
+
+.recommendations__destinations {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 0em 1.25em 0em; /*Fixed padding to match layout as in the Mock doc*/
+}
+
+@media (min-width: 768px) {
+  .recommendations__destinations__link {
+    margin: 0.5em; /*adds a margin around the images, and to make the image link exclusively clickable in the image, and not the surroundings outside of the image*/
+  }
+}
+@media (min-width: 1280px) {
+  .recommendations__destinations__link {
+    margin: 1.25em; /*adds a margin around the images, and to make the image link exclusively clickable in the image, and not the surroundings outside of the image*/
+  }
+}
+.recommendations__destinations__card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.recommendations__destinations__card__text {
+  position: absolute;
+  color: #FFFFFF;
+  padding: 0.75em;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .recommendations__destinations__card__image {
+    height: 40vmin;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  }
+}
+@media (min-width: 1280px) {
+  .recommendations__destinations__card__image {
+    height: 25rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  }
+}
+/*ASK IF THEY WILL ACCEPT THIS ANIMATION*/
+.recommendations__destinations__link:hover {
+  border-radius: 0.3125rem;
+  box-shadow: 1rem 1rem 1rem rgba(96, 143, 87, 0.7);
+}/*# sourceMappingURL=main.css.map */
