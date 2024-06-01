@@ -1,19 +1,5 @@
 @use './partials/global' as *;
 
-
-/*Removes margin, and padding from the body around website, applied to match display from Mock docuemnt*/
-/*Added box-sizing: border-box, to prevent main containers, and elements, lose consistent measurements.*/
-* {
-    box-sizing: border-box;
-    margin: 0rem;
-    padding: 0rem;
-}
-
-
-button:hover {
-    cursor: pointer;
-}
-
 @mixin tablet {
     @media (min-width: 768px) {
         @content;
@@ -24,6 +10,16 @@ button:hover {
     @media (min-width: 1280px) {
         @content;
     }
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+.recommendations__destinations__link:hover {
+    border-radius: 0.3125rem;
+    box-shadow: 1rem 1rem 1rem rgba(96, 143, 87, 0.7);
 }
 
 .hero {
@@ -133,66 +129,76 @@ button:hover {
     background-color: #FFFFFF;
     padding: 1.25em;
     margin: 1.25em;
-}
 
-.recommendations__title {
-    margin-left: 2em;
-    color: #335576;
-    font-size: 1.35rem;
-}
+        &__title {
+            color: #335576;
 
-.recommendations__destinations {
-    display: flex;
-    justify-content: center;
-    padding: 0.5em 0em 1.25em 0em;   /*Fixed padding to match layout as in the Mock doc*/
-}
+            @include tablet {
+                font-size: 2rem;
+                text-align: center;
+                margin-left: 0em;
+            }
 
-@media (min-width: 768px) {
-    .recommendations__destinations__link {
-        margin: 0.5em; /*adds a margin around the images, and to make the image link exclusively clickable in the image, and not the surroundings outside of the image*/
-    }
-}
+            @include desktop {
+                font-size: 1.35rem;
+                text-align: left;
+                margin-left: 2em;
+            }
+        }
 
-@media (min-width: 1280px) {
-    .recommendations__destinations__link {
-        margin: 1.25em; /*adds a margin around the images, and to make the image link exclusively clickable in the image, and not the surroundings outside of the image*/
-    }
-}
-.recommendations__destinations__card {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    position: relative;
-}
 
-.recommendations__destinations__card__text {
-   position: absolute;
-   color: #FFFFFF;
-   padding: 0.75em;
-   font-size: 1.5rem; 
-   font-weight: 700;
-}
+        &__destinations {
+          
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
-@media (min-width: 768px) {
-    .recommendations__destinations__card__image {
-        height: 40vmin;
-        border-radius: 0.3125rem;
-        border: 0.0625rem solid rgba(0, 0, 0, 0.2);
-        box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
-    }
-}
+            @include desktop {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                padding: 0.5em 0em 1.25em 0em;   /*Fixed padding to match layout as in the Mock doc*/            
+            }
 
-@media (min-width: 1280px) {
-    .recommendations__destinations__card__image {
-        height: 25rem;
-        border-radius: 0.3125rem;
-        border: 0.0625rem solid rgba(0, 0, 0, 0.2);
-        box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
-    }
-}
+            &__link {
+                @include tablet {
+                    margin: 0.5em;  /*adds a margin around the images, and to make the image link exclusively clickable in the image, and not the surroundings outside of the image*/
+                }
 
-/*ASK IF THEY WILL ACCEPT THIS ANIMATION*/
-.recommendations__destinations__link:hover {
-    border-radius: 0.3125rem;
-    box-shadow: 1rem 1rem 1rem rgba(96, 143, 87, 0.7);
+                @include desktop {
+                    margin: 1.25em; /*adds a margin around the images, and to make the image link exclusively clickable in the image, and not the surroundings outside of the image*/
+                }
+            }
+
+            &__card {
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                position: relative;
+
+                &__text {
+                    position: absolute;
+                    color: #FFFFFF;
+                    padding: 0.75em;
+                    font-size: 1.5rem; 
+                    font-weight: 700;
+                }
+
+                &__image {
+                    border-radius: 0.3125rem;
+                    border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+                    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+
+                    @include tablet {
+                        height: 50vmax;
+                    }
+
+                    @include desktop {
+                        height: 25rem;
+                    }
+                }
+            }
+        }
 }
