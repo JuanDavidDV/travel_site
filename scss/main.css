@@ -70,7 +70,7 @@ body {
 }
 @media (min-width: 1280px) {
   .header-page__navigation__link:hover {
-    padding-bottom: 0.6em;
+    padding-bottom: 0.63em;
   }
 }
 .header-page__navigation__alignment--home {

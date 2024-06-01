@@ -24,40 +24,63 @@
     height: 43rem;
 }
 
-.destination__container__title {
-    font-size: 4rem;
-    color: #FFFFFF;
-    padding: 0.90em 0em 0.50em 1.5em;    /*Customized padding applied to match display as Mock document*/
-}
+.destination__container {
+    &__title {
+        color: #FFFFFF;
 
-.destination__container__itinerary {
-    display: flex;
-    justify-content: center;
-}
+        @include tablet {
+            font-size: 5rem;
+            text-align: center;
+            padding: 0.25em;
+        }
 
-.destination__container__itinerary__card {
-    background-color: #FFFFFF;
-    margin: 1em;
-    padding: 0.80em;
-    height: 24rem;
-    border-radius: 0.3125rem;
-    border: 0.0625rem solid rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
+        @include desktop {
+            font-size: 4rem;
+            text-align: left;
+            padding: 0.90em 0em 0.50em 1.5em;    /*Customized padding applied to match display as Mock document*/
 
-.destination__container__itinerary__card__title {
-    border-bottom: 0.125rem solid black;
-    width: 14rem;
-    margin-bottom: 1.50em; /*added to include space between day, and activities. This to make it look as the Mock doc*/
-}
+        }
+    }
 
-.destination__container__itinerary__card--list {
-    list-style-type: none;
-}
+    &__itinerary {
+        display: flex;
+        justify-content: center;
+    
+            &__card {
+                background-color: #FFFFFF;
+                padding: 0.80em;
+                height: 24rem;
+                border-radius: 0.3125rem;
+                border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+                text-align: center;
 
-.destination__container__itinerary__card--activities {
-    margin: 1em 0em; /*Used a 1em margin to match Mock document*/
-    padding: 1em 0em;/*Used a 1em padding to match Mock document*/
-    background-color: #FEFAF5;
-    font-size: 1em;
+                @include tablet {
+                    margin: 1.5em;
+                    width: 20vmax;
+                }
+
+                @include desktop {
+                    margin: 1em;
+                    width: 15.72rem;
+                    
+                }
+
+                    &__title {
+                        border-bottom: 0.125rem solid black;
+                        text-align: center;
+                        margin-bottom: 1.50em; /*added to include space between day, and activities. This to make it look as the Mock doc*/                    
+                    }
+
+                    &--list {
+                        list-style-type: none;
+                    }
+
+                    &--activities {
+                        margin: 1em 0em; /*Used a 1em margin to match Mock document*/
+                        padding: 1em 0em;/*Used a 1em padding to match Mock document*/
+                        background-color: #FEFAF5;
+                        font-size: 1em;
+                    }
+            }
+    }
 }

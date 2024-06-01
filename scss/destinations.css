@@ -70,7 +70,7 @@ body {
 }
 @media (min-width: 1280px) {
   .header-page__navigation__link:hover {
-    padding-bottom: 0.6em;
+    padding-bottom: 0.63em;
   }
 }
 .header-page__navigation__alignment--home {
@@ -193,36 +193,54 @@ body {
 }
 
 .destination__container__title {
-  font-size: 4rem;
   color: #FFFFFF;
-  padding: 0.9em 0em 0.5em 1.5em; /*Customized padding applied to match display as Mock document*/
 }
-
+@media (min-width: 768px) {
+  .destination__container__title {
+    font-size: 5rem;
+    text-align: center;
+    padding: 0.25em;
+  }
+}
+@media (min-width: 1280px) {
+  .destination__container__title {
+    font-size: 4rem;
+    text-align: left;
+    padding: 0.9em 0em 0.5em 1.5em; /*Customized padding applied to match display as Mock document*/
+  }
+}
 .destination__container__itinerary {
   display: flex;
   justify-content: center;
 }
-
 .destination__container__itinerary__card {
   background-color: #FFFFFF;
-  margin: 1em;
   padding: 0.8em;
   height: 24rem;
   border-radius: 0.3125rem;
   border: 0.0625rem solid rgba(0, 0, 0, 0.2);
   text-align: center;
 }
-
+@media (min-width: 768px) {
+  .destination__container__itinerary__card {
+    margin: 1.5em;
+    width: 20vmax;
+  }
+}
+@media (min-width: 1280px) {
+  .destination__container__itinerary__card {
+    margin: 1em;
+    width: 15.72rem;
+  }
+}
 .destination__container__itinerary__card__title {
   border-bottom: 0.125rem solid black;
-  width: 14rem;
+  text-align: center;
   margin-bottom: 1.5em; /*added to include space between day, and activities. This to make it look as the Mock doc*/
 }
-
 .destination__container__itinerary__card--list {
   list-style-type: none;
 }
-
 .destination__container__itinerary__card--activities {
   margin: 1em 0em; /*Used a 1em margin to match Mock document*/
   padding: 1em 0em; /*Used a 1em padding to match Mock document*/
