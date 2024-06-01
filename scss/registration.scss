@@ -1,37 +1,12 @@
 @use './partials/global' as *;
 
-.registration {
-    width: 100%;
-    background-color: #FEFAF5;
-    padding: 2em 3.25em 5em 3.25em; /*Fixed margin to match display hero section layout as in the Mock doc*/
-    display: flex;
-}
-
-.registration__info {
-    width: 55vw;
-}
-
-.registration__info__title {
-    color: #335576;
-    font-size: 2.30rem;
-    padding: 1.25em;
-}
-
-.registration__info__destination-select {
-    margin-left: 3em;
-}
-
-label {
+label { /*Style for questions*/
     color: #DB7A4E;
 }
 
-select {
+select {    /*Style for input (multiple choice answer)*/
     color: #335576;
     font-size: 1em;
-}
-
-.registration__info--personal-information {
-    padding-left: 3em;
 }
 
 input {
@@ -39,35 +14,95 @@ input {
     font-size: 1rem;
 }
 
-.registration__info__text {
-    margin: 1.25em 1em 0.5em 2.80em;
-    color:#335576;
-}
+.registration {
+    width: 100%;
+    background-color: #FEFAF5;
+    
+    @include tablet {
+        display: block;
+    }
 
-.destination__info__button {
-    background-color: #DB7A4E;
-    color:  #FFFFFF;
-    width: 10rem;
-    padding: 0.75em;
-    font-family: inherit;
-    border: none;
-    border-radius: 1.875rem;
-    margin: 1.25em 3.5em;
-}
+    @include desktop {
+        display: flex;
+        padding: 2em 3.25em 5em 3.25em; /*Fixed margin to match display hero section layout as in the Mock doc*/
+    }
 
-.registration__pictures {
-    display: flex;
-    align-items: center;
-}
+    &__info {
+        &__title {
+            color: #335576;
+            font-size: 2.30rem;
+            padding: 1.25em;
+            text-align: center;
+        }
 
-.registration__pictures__images {
-    height:19rem;
-}
+        &__destination-select {
+            margin-left: 3em;
+        }
 
-button:hover {
-    cursor: pointer;
-}
+        &--personal-information {
+            padding-left: 3em;
+        }
 
-button:active {
-    background-color: yellowgreen;
+        &__text {
+            margin: 1.25em 1em 0.5em 2.80em;
+            color:#335576;
+        }
+
+        &__button {
+            background-color: #DB7A4E;
+            color:  #FFFFFF;
+            width: 10rem;
+            padding: 0.75em;
+            font-family: inherit;
+            border: none;
+            border-radius: 1.875rem;
+            margin: 1.25em 3.5em;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &:active {
+                    background-color: yellowgreen;
+                }
+        }
+    }
+
+    &__pictures {
+        
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            padding: 1.25em;
+        }
+
+        @include desktop {
+            display: flex;
+            align-items: center;
+        }
+
+            &__link {
+
+                @include tablet {
+                    margin: 1.25em;
+                }
+
+                @include desktop {
+                    margin: 0em;
+                }
+                
+            }
+        
+            &__images {
+
+                @include tablet {
+                    height: 40vw;
+                }
+
+                @include desktop {
+                    height: 19rem;
+                }
+                
+            }
+    }
 }

@@ -51,7 +51,6 @@
                 padding: 0.80em;
                 height: 24rem;
                 border-radius: 0.3125rem;
-                border: 0.0625rem solid rgba(0, 0, 0, 0.2);
                 text-align: center;
 
                 @include tablet {
@@ -60,7 +59,7 @@
                 }
 
                 @include desktop {
-                    margin: 1em;
+                    margin: 1.25em;
                     width: 15.72rem;
                     
                 }

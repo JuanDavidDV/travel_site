@@ -218,7 +218,6 @@ body {
   padding: 0.8em;
   height: 24rem;
   border-radius: 0.3125rem;
-  border: 0.0625rem solid rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -229,7 +228,7 @@ body {
 }
 @media (min-width: 1280px) {
   .destination__container__itinerary__card {
-    margin: 1em;
+    margin: 1.25em;
     width: 15.72rem;
   }
 }

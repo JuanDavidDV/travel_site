@@ -168,10 +168,6 @@ body {
   text-decoration: none;
 }
 
-button:hover {
-  cursor: pointer;
-}
-
 .recommendations__destinations__link:hover {
   border-radius: 0.3125rem;
   box-shadow: 1rem 1rem 1rem rgba(96, 143, 87, 0.7);
@@ -265,6 +261,9 @@ button:hover {
   .hero__container-text__button {
     font-size: 0.833rem;
   }
+}
+.hero__container-text__button:hover {
+  cursor: pointer;
 }
 .hero__container-image--airplane {
   padding-top: 1.25em; /*padding added to match display layout as the Mock doc*/

@@ -1,9 +1,5 @@
 @use './partials/global' as *;
 
-button:hover {
-    cursor: pointer;
-}
-
 .recommendations__destinations__link:hover {
     border-radius: 0.3125rem;
     box-shadow: 1rem 1rem 1rem rgba(96, 143, 87, 0.7);
@@ -88,6 +84,10 @@ button:hover {
 
                     @include desktop {
                         font-size: 0.833rem;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
                     }
 
 
