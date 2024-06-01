@@ -144,19 +144,24 @@ body {
   padding: 0rem;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .hero {
   width: 100%;
   background-color: #FEFAF5;
-  display: flex;
-  justify-content: space-around;
   padding: 2em 3.25em 5em 3.25em; /*Fixed margin to match display hero section layout as in the Mock doc*/
 }
 @media (min-width: 768px) {
   .hero {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
+    display: block;
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    display: flex;
+    justify-content: space-around;
   }
 }
 .hero__container-text {
@@ -164,30 +169,55 @@ body {
   text-align: left;
 }
 @media (min-width: 768px) {
-  .hero__container-text__title {
-    color: #335576;
-    font-size: 3rem;
-    width: 40vw;
-    padding-bottom: 1em;
+  .hero__container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
-@media (min-width: 768px) and (min-width: 1280px) {
+@media (min-width: 1280px) {
+  .hero__container-text {
+    display: block; /*Included to prevent desktop view inherit display: flex*/
+  }
+}
+.hero__container-text__title {
+  color: #335576;
+}
+@media (min-width: 768px) {
   .hero__container-text__title {
-    color: #335576;
+    font-size: 2.8rem;
+    width: 70vw;
+    text-align: center;
+    padding-bottom: 0.5em;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__container-text__title {
     font-size: 2.3rem;
     width: 40vw;
+    text-align: left;
     padding-bottom: 1em;
   }
 }
-
 .hero__container-text__paragraph {
   color: #335576;
-  padding-bottom: 2em;
-  width: 46vw;
-  font-size: 0.9rem;
 }
-
-/*WHY IS BUTTON NOT USING INHERIT FONT-FAMILY*/
+@media (min-width: 768px) {
+  .hero__container-text__paragraph {
+    width: 46vw;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-bottom: 0.75em;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__container-text__paragraph {
+    width: 46vw;
+    font-size: 0.9rem;
+    text-align: left;
+    padding-bottom: 2em;
+  }
+}
 .hero__container-text__button {
   background-color: #DB7A4E;
   color: #FFFFFF;
@@ -197,23 +227,35 @@ body {
   border: none;
   border-radius: 1.875rem;
 }
-
-button:hover {
-  cursor: pointer;
+@media (min-width: 768px) {
+  .hero__container-text__button {
+    font-size: 1.25rem;
+  }
 }
-
+@media (min-width: 1280px) {
+  .hero__container-text__button {
+    font-size: 0.833rem;
+  }
+}
+.hero__container-image--airplane {
+  padding-top: 1.25em; /*padding added to match display layout as the Mock doc*/
+}
 @media (min-width: 768px) {
   .hero__container-image--airplane {
-    padding-top: 1.25em; /*padding added to match display layout as the Mock doc*/
-    width: 24rem;
+    height: 29rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /*Centers image when Tablet responsive design is applied*/
   }
 }
 @media (min-width: 1280px) {
   .hero__container-image--airplane {
-    padding-top: 1.25em; /*padding added to match display layout as the Mock doc*/
     height: 24rem;
+    margin-left: 0em;
+    margin-right: 0em; /*used to align image layout to Mock document*/
   }
 }
+
 .recommendations {
   background-color: #FFFFFF;
   padding: 1.25em;
