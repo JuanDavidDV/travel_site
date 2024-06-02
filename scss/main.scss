@@ -1,6 +1,7 @@
 @use './partials/global' as *;
 @use './partials/media-query' as *;
 @use './partials/variables' as *;
+@use './partials/button' as *;
 
 .hero {
     width: 100%;
@@ -50,16 +51,15 @@
 
                 &__paragraph{
                     color: $travel-blue;
+                    width: 46vw;
                     
                     @include tablet {
-                        width: 46vw;
                         font-size: 1.25rem;
                         text-align: center;
                         padding-bottom: 0.75em;
                     }
 
                     @include desktop {
-                        width: 46vw;
                         font-size: 0.9rem;
                         text-align: left;
                         padding-bottom: 2em;
@@ -67,13 +67,7 @@
                 }
 
                 &__button  {
-                    background-color: $travel-orange;
-                    color:  $white;
-                    width: 10rem;
-                    padding: 0.75em;
-                    font-family: inherit;
-                    border: none;
-                    border-radius: 1.875rem;
+                    @extend .button;
 
                     @include tablet {
                         font-size: 1.25rem;
@@ -86,8 +80,6 @@
                     &:hover {
                         cursor: pointer;
                     }
-
-
                 }
         }
 
@@ -97,13 +89,13 @@
             @include tablet {
                 height: 29rem;
                 display: block;
-                margin-left: auto;
+                margin-left: auto;  /*Centers image when Tablet responsive design is applied*/
                 margin-right: auto; /*Centers image when Tablet responsive design is applied*/
             }
             
             @include desktop {
                 height: 24rem;
-                margin-left: 0em;
+                margin-left: 0em;  /*used to align image layout to Mock document*/
                 margin-right: 0em; /*used to align image layout to Mock document*/
             }
         }
@@ -132,7 +124,6 @@
 
 
         &__destinations {
-          
             @include tablet {
                 display: flex;
                 flex-direction: column;

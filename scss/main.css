@@ -171,6 +171,16 @@ body {
   text-decoration: none;
 }
 
+.button, .hero__container-text__button {
+  background-color: #DB7A4E;
+  color: #FFFFFF;
+  width: 10rem;
+  padding: 0.75em;
+  font-family: inherit;
+  border: none;
+  border-radius: 1.875rem;
+}
+
 .hero {
   width: 100%;
   background-color: #FEFAF5;
@@ -224,10 +234,10 @@ body {
 }
 .hero__container-text__paragraph {
   color: #335576;
+  width: 46vw;
 }
 @media (min-width: 768px) {
   .hero__container-text__paragraph {
-    width: 46vw;
     font-size: 1.25rem;
     text-align: center;
     padding-bottom: 0.75em;
@@ -235,20 +245,10 @@ body {
 }
 @media (min-width: 1280px) {
   .hero__container-text__paragraph {
-    width: 46vw;
     font-size: 0.9rem;
     text-align: left;
     padding-bottom: 2em;
   }
-}
-.hero__container-text__button {
-  background-color: #DB7A4E;
-  color: #FFFFFF;
-  width: 10rem;
-  padding: 0.75em;
-  font-family: inherit;
-  border: none;
-  border-radius: 1.875rem;
 }
 @media (min-width: 768px) {
   .hero__container-text__button {
@@ -270,14 +270,14 @@ body {
   .hero__container-image--airplane {
     height: 29rem;
     display: block;
-    margin-left: auto;
+    margin-left: auto; /*Centers image when Tablet responsive design is applied*/
     margin-right: auto; /*Centers image when Tablet responsive design is applied*/
   }
 }
 @media (min-width: 1280px) {
   .hero__container-image--airplane {
     height: 24rem;
-    margin-left: 0em;
+    margin-left: 0em; /*used to align image layout to Mock document*/
     margin-right: 0em; /*used to align image layout to Mock document*/
   }
 }

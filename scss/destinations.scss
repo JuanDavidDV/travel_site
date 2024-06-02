@@ -4,7 +4,6 @@
 @use './partials/mixins' as *;
 
 .destination__container {
-
     &--Hawaii {
         @include destination ($hawaii);     /*Mixin used to apply background images through websites*/
     }
