@@ -1,3 +1,6 @@
+/*Colors*/
+/*Responsive Design Breakpoints*/
+/*Background Images*/
 * {
   box-sizing: border-box;
   margin: 0rem;
@@ -5,7 +8,7 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; /*ASK IF THIS IS THE CORRECT FONT*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header-page {
@@ -48,7 +51,7 @@ body {
 }
 .header-page__navigation__link {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 @media (min-width: 768px) {
   .header-page__navigation__link {
@@ -166,11 +169,6 @@ body {
 }
 .footer-page__box--social-link {
   text-decoration: none;
-}
-
-.recommendations__destinations__link:hover {
-  border-radius: 0.3125rem;
-  box-shadow: 1rem 1rem 1rem rgba(96, 143, 87, 0.7);
 }
 
 .hero {
@@ -330,6 +328,10 @@ body {
   .recommendations__destinations__link {
     margin: 1.25em; /*adds a margin around the images, and to make the image link exclusively clickable in the image, and not the surroundings outside of the image*/
   }
+}
+.recommendations__destinations__link:hover {
+  border-radius: 0.3125rem;
+  box-shadow: 1rem 1rem 1rem rgba(96, 143, 87, 0.7);
 }
 .recommendations__destinations__card {
   display: flex;

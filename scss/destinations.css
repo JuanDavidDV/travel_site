@@ -1,3 +1,6 @@
+/*Colors*/
+/*Responsive Design Breakpoints*/
+/*Background Images*/
 * {
   box-sizing: border-box;
   margin: 0rem;
@@ -5,7 +8,7 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; /*ASK IF THIS IS THE CORRECT FONT*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header-page {
@@ -48,7 +51,7 @@ body {
 }
 .header-page__navigation__link {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 @media (min-width: 768px) {
   .header-page__navigation__link {
@@ -169,29 +172,32 @@ body {
 }
 
 .destination__container--Hawaii {
-  background-image: url("../assets/Images/hawaii.jpg");
+  /*Mixin created for bakckground image properties and to add image as a variable in the variables.scss and destinations.scss*/
+  background-image: url("../../assets/Images/hawaii.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 43rem;
+  /*Mixin used to apply background images through websites*/
 }
-
 .destination__container--Iceland {
-  background-image: url("../assets/Images/iceland.jpg");
+  /*Mixin created for bakckground image properties and to add image as a variable in the variables.scss and destinations.scss*/
+  background-image: url("../../assets/Images/iceland.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 43rem;
+  /*Mixin used to apply background images through websites*/
 }
-
 .destination__container--Greece {
-  background-image: url("../assets/Images/greece.jpg");
+  /*Mixin created for bakckground image properties and to add image as a variable in the variables.scss and destinations.scss*/
+  background-image: url("../../assets/Images/greece.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 43rem;
+  /*Mixin used to apply background images through websites*/
 }
-
 .destination__container__title {
   color: #FFFFFF;
 }
@@ -233,7 +239,7 @@ body {
   }
 }
 .destination__container__itinerary__card__title {
-  border-bottom: 0.125rem solid black;
+  border-bottom: 0.125rem solid #000000;
   text-align: center;
   margin-bottom: 1.5em; /*added to include space between day, and activities. This to make it look as the Mock doc*/
 }

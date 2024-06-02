@@ -1,32 +1,25 @@
 @use './partials/global' as *;
-
-.destination__container--Hawaii {
-    background-image: url("../assets/Images/hawaii.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 43rem;
-}
-
-.destination__container--Iceland {
-    background-image: url("../assets/Images/iceland.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 43rem;
-}
-
-.destination__container--Greece {
-    background-image: url("../assets/Images/greece.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 43rem;
-}
+@use './partials/media-query' as *;
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
 
 .destination__container {
+
+    &--Hawaii {
+        @include destination ($hawaii);     /*Mixin used to apply background images through websites*/
+    }
+
+    &--Iceland {
+        @include destination ($iceland);   /*Mixin used to apply background images through websites*/
+    }
+    
+    &--Greece {
+        @include destination ($greece);    /*Mixin used to apply background images through websites*/
+    }
+
+
     &__title {
-        color: #FFFFFF;
+        color: $white;
 
         @include tablet {
             font-size: 5rem;
@@ -38,7 +31,6 @@
             font-size: 4rem;
             text-align: left;
             padding: 0.90em 0em 0.50em 1.5em;    /*Customized padding applied to match display as Mock document*/
-
         }
     }
 
@@ -47,7 +39,7 @@
         justify-content: center;
     
             &__card {
-                background-color: #FFFFFF;
+                background-color: $white;
                 padding: 0.80em;
                 height: 24rem;
                 border-radius: 0.3125rem;
@@ -65,7 +57,7 @@
                 }
 
                     &__title {
-                        border-bottom: 0.125rem solid black;
+                        border-bottom: 0.125rem solid $black;
                         text-align: center;
                         margin-bottom: 1.50em; /*added to include space between day, and activities. This to make it look as the Mock doc*/                    
                     }
@@ -77,7 +69,7 @@
                     &--activities {
                         margin: 1em 0em; /*Used a 1em margin to match Mock document*/
                         padding: 1em 0em;/*Used a 1em padding to match Mock document*/
-                        background-color: #FEFAF5;
+                        background-color: $travel-salmon;
                         font-size: 1em;
                     }
             }

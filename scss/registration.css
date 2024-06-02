@@ -1,3 +1,6 @@
+/*Colors*/
+/*Responsive Design Breakpoints*/
+/*Background Images*/
 * {
   box-sizing: border-box;
   margin: 0rem;
@@ -5,7 +8,7 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; /*ASK IF THIS IS THE CORRECT FONT*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header-page {
@@ -48,7 +51,7 @@ body {
 }
 .header-page__navigation__link {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 @media (min-width: 768px) {
   .header-page__navigation__link {

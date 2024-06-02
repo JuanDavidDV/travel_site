@@ -1,22 +1,24 @@
 @use './partials/global' as *;
+@use './partials/media-query' as *;
+@use './partials/variables' as *;
 
 label { /*Style for questions*/
-    color: #DB7A4E;
+    color: $travel-orange;
 }
 
 select {    /*Style for input (multiple choice answer)*/
-    color: #335576;
+    color: $travel-blue;
     font-size: 1em;
 }
 
 input {
-    color: #335576;
+    color: $travel-blue;
     font-size: 1rem;
 }
 
 .registration {
     width: 100%;
-    background-color: #FEFAF5;
+    background-color: $travel-salmon;
     
     @include tablet {
         display: block;
@@ -29,7 +31,7 @@ input {
 
     &__info {
         &__title {
-            color: #335576;
+            color: $travel-blue;
             font-size: 2.30rem;
             padding: 1.25em;
             text-align: center;
@@ -45,12 +47,12 @@ input {
 
         &__text {
             margin: 1.25em 1em 0.5em 2.80em;
-            color:#335576;
+            color:$travel-blue;
         }
 
         &__button {
-            background-color: #DB7A4E;
-            color:  #FFFFFF;
+            background-color: $travel-orange;
+            color: $white;
             width: 10rem;
             padding: 0.75em;
             font-family: inherit;

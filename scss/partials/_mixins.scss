@@ -1,0 +1,10 @@
+@use 'variables' as *;
+
+@mixin destination ($background-image) {    /*Mixin created for bakckground image properties and to add image as a variable in the variables.scss and destinations.scss*/
+    background-image: $background-image;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 43rem;
+}
+
