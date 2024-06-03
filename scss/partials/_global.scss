@@ -20,26 +20,26 @@ body {
 
         &__link {
             text-decoration: none;
+            color: $travel-blue;
+        }
         
-            &__title {
-                color: $travel-blue;
+        &__title {
+            @include phone {
+                font-size: 0.80rem;
+                margin-right: 2.5em;  /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
+            }
 
-                @include phone {
-                    font-size: 0.80rem;
-                    margin-right: 2.5em;  /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
-                }
+            @include tablet {
+                font-size: 1.50rem;
+                margin-right: 10em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
+            }
 
-                @include tablet {
-                    font-size: 1.50rem;
-                    margin-right: 10em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
-                }
-
-                @include desktop {
-                    font-size: 1.20rem;
-                    margin-right: 30em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
-                }
+            @include desktop {
+                font-size: 1.20rem;
+                margin-right: 30em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
             }
         }
+        
 
         &__navigation {
             display: inline-block;

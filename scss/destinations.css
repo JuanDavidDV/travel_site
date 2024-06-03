@@ -20,24 +20,22 @@ body {
 }
 .header-page__link {
   text-decoration: none;
-}
-.header-page__link__title {
   color: #335576;
 }
 @media (min-width: 320px) {
-  .header-page__link__title {
+  .header-page__title {
     font-size: 0.8rem;
     margin-right: 2.5em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
   }
 }
 @media (min-width: 768px) {
-  .header-page__link__title {
+  .header-page__title {
     font-size: 1.5rem;
     margin-right: 10em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
   }
 }
 @media (min-width: 1280px) {
-  .header-page__link__title {
+  .header-page__title {
     font-size: 1.2rem;
     margin-right: 30em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
   }
