@@ -5,18 +5,37 @@
 
 label { /*Style for questions*/
     color: $travel-orange;
+    
+    @include phone {
+        font-size: 0.75rem;
+    }
+
+    @include tablet {
+        font-size: 1rem;
+    }
 }
 
 select, input {    /*Style for input (multiple choice answer) and style input entered by the user*/
     color: $travel-blue;
-    font-size: 1em;
+    
+    @include phone {
+        font-size: 0.75rem;
+        margin-left: 3em;
+    }
+
+    @include tablet {
+        font-size: 1rem;
+        margin-left: 0em;
+    }
+
+    
 }
 
 .registration {
     width: 100%;
     background-color: $travel-salmon;
-    
-    @include tablet {
+
+    @include phone {
         display: block;
     }
 
@@ -26,11 +45,21 @@ select, input {    /*Style for input (multiple choice answer) and style input en
     }
 
     &__info {
+
         &__title {
             color: $travel-blue;
-            font-size: 2.30rem;
             padding: 1.25em;
             text-align: center;
+
+            @include phone {
+                font-size: 1.5rem;
+            }
+
+            @include tablet {
+                font-size: 2.30rem;
+            }
+
+
         }
 
         &__destination-select {
@@ -63,9 +92,9 @@ select, input {    /*Style for input (multiple choice answer) and style input en
     &__pictures {
         display: flex;
 
-        @include tablet {
+        @include phone {
             justify-content: center;
-            padding: 1.25em;
+            
         }
 
         @include desktop {
@@ -74,8 +103,8 @@ select, input {    /*Style for input (multiple choice answer) and style input en
 
             &__link {
 
-                @include tablet {
-                    margin: 1.25em;
+                @include phone {
+                    margin: 0.5em;
                 }
 
                 @include desktop {
@@ -86,7 +115,7 @@ select, input {    /*Style for input (multiple choice answer) and style input en
         
             &__images {
 
-                @include tablet {
+                @include phone {
                     height: 40vw;
                 }
 

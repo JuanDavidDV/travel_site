@@ -24,6 +24,11 @@ body {
             &__title {
                 color: $travel-blue;
 
+                @include phone {
+                    font-size: 0.80rem;
+                    margin-right: 2.5em;  /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
+                }
+
                 @include tablet {
                     font-size: 1.50rem;
                     margin-right: 10em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
@@ -39,6 +44,10 @@ body {
         &__navigation {
             display: inline-block;
 
+            @include phone {
+                margin: 0.0em 0.10em; /*Adds spacing between nav links */
+            }
+
             @include tablet {
                 margin: 0em 0.25em;  /*Adds spacing between nav links */
             }
@@ -51,6 +60,10 @@ body {
                     text-decoration: none;
                     color: $black;
 
+                    @include phone {
+                        font-size: 0.6rem;
+                    }
+
                     @include tablet {
                         font-size: 1rem;
                     }
@@ -61,6 +74,10 @@ body {
 
                         &:hover {
                             border-bottom: 0.2rem solid $travel-purple;
+
+                            @include phone {
+                                padding-bottom: 1em;
+                            }
                             
                             @include tablet {
                                 padding-bottom: 0.50em;
@@ -96,14 +113,22 @@ body {
         &__box--contact {
             padding: 1.75em 0em 1.75em 4.75em;  /*Customized padding to match footer display as in the Mock document*/
 
+            @include phone {
+                margin-left: 0em;
+                padding-left: 0.25em;
+                padding-right: 2em;
+            }
+
             @include tablet {
                 margin-left: 0em;
                 padding-left: 1.5em;
+                padding-right: 0em;
             }
 
             @include desktop {
                 margin-left: 4.5em;
                 padding-left: 4.75em;
+                padding-right: 0em;
             }
         }
 
@@ -129,6 +154,10 @@ body {
             }
 
         &__box--social {
+            @include phone {
+                margin-right: 0em;
+                padding: 1.75em 1.5em 1.75em 1em;
+            }
             
             @include tablet {
                 margin-right: 0em;
@@ -144,29 +173,62 @@ body {
         &__title {
             color: $travel-blue;
             padding: 1em 1em 1em 0em;
+
+            @include phone {
+                font-size: 0.9rem;
+            }
+
+            @include tablet {
+                font-size: 1.5rem;
+            }
         }
 
         &__subtitle {
             color: $travel-orange;
-            font-size: 0.6rem;
             font-weight: 500;
             padding-bottom: 1em;
+
+            @include phone {
+                font-size: 0.75rem;
+            }
+
+            @include tablet {
+                font-size: 0.6rem;
+            }
         }
 
         &__paragraph {
             color: $travel-blue;
             font-size: 0.9rem;
-            padding-bottom: 1.50em; /*Customized padding to match display as in the Mock document adding precise padding bottom*/        
+            padding-bottom: 1.50em; /*Customized padding to match display as in the Mock document adding precise padding bottom*/  
+            
+            @include phone {
+                font-size: 0.60rem;
+            }
+
+            @include tablet {
+                font-size: 0.9rem;
+            }
+
+            @include desktop {
+                font-size: 0.9rem;
+            }
         }
 
         &__logo {
-            height: 1.5rem;
             margin-top: 0.75em;
-            
+
+            @include phone {
+                margin-right: 0.5em;
+                height: 1rem;
+            }
+           
             @include tablet {
+                height: 1.5rem;
                 margin-right: 0.5em;
             }
             @include desktop {
+                height: 1.5rem;
                 margin-right: 2em;
             }
         }

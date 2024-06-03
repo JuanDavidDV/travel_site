@@ -20,6 +20,12 @@
     &__title {
         color: $white;
 
+        @include phone {
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 1.75em;
+        }
+
         @include tablet {
             font-size: 5rem;
             text-align: center;
@@ -44,6 +50,11 @@
                 border-radius: 0.3125rem;
                 text-align: center;
 
+                @include phone {
+                    margin: 0.5em;
+                    width: 40vmax;
+                }
+
                 @include tablet {
                     margin: 1.5em;
                     width: 20vmax;
@@ -58,7 +69,15 @@
                     &__title {
                         border-bottom: 0.125rem solid $black;
                         text-align: center;
-                        margin-bottom: 1.50em; /*added to include space between day, and activities. This to make it look as the Mock doc*/                    
+                        margin-bottom: 1.50em; /*added to include space between day, and activities. This to make it look as the Mock doc*/     
+                        
+                        @include phone {
+                            font-size: 0.75rem;
+                        }
+
+                        @include tablet {
+                            font-size: 1.17rem;
+                        }
                     }
 
                     &--list {
@@ -69,7 +88,14 @@
                         margin: 1em 0em; /*Used a 1em margin to match Mock document*/
                         padding: 1em 0em;/*Used a 1em padding to match Mock document*/
                         background-color: $travel-salmon;
-                        font-size: 1em;
+                        
+                        @include phone {
+                            font-size: 0.75rem;
+                        }
+
+                        @include tablet {
+                            font-size: 1rem;
+                        }
                     }
             }
     }

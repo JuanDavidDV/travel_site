@@ -24,6 +24,12 @@ body {
 .header-page__link__title {
   color: #335576;
 }
+@media (min-width: 320px) {
+  .header-page__link__title {
+    font-size: 0.8rem;
+    margin-right: 2.5em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
+  }
+}
 @media (min-width: 768px) {
   .header-page__link__title {
     font-size: 1.5rem;
@@ -39,6 +45,11 @@ body {
 .header-page__navigation {
   display: inline-block;
 }
+@media (min-width: 320px) {
+  .header-page__navigation {
+    margin: 0em 0.1em; /*Adds spacing between nav links */
+  }
+}
 @media (min-width: 768px) {
   .header-page__navigation {
     margin: 0em 0.25em; /*Adds spacing between nav links */
@@ -53,6 +64,11 @@ body {
   text-decoration: none;
   color: #000000;
 }
+@media (min-width: 320px) {
+  .header-page__navigation__link {
+    font-size: 0.6rem;
+  }
+}
 @media (min-width: 768px) {
   .header-page__navigation__link {
     font-size: 1rem;
@@ -65,6 +81,11 @@ body {
 }
 .header-page__navigation__link:hover {
   border-bottom: 0.2rem solid rgb(137, 137, 204);
+}
+@media (min-width: 320px) {
+  .header-page__navigation__link:hover {
+    padding-bottom: 1em;
+  }
 }
 @media (min-width: 768px) {
   .header-page__navigation__link:hover {
@@ -95,16 +116,25 @@ body {
 .footer-page__box--contact {
   padding: 1.75em 0em 1.75em 4.75em; /*Customized padding to match footer display as in the Mock document*/
 }
+@media (min-width: 320px) {
+  .footer-page__box--contact {
+    margin-left: 0em;
+    padding-left: 0.25em;
+    padding-right: 2em;
+  }
+}
 @media (min-width: 768px) {
   .footer-page__box--contact {
     margin-left: 0em;
     padding-left: 1.5em;
+    padding-right: 0em;
   }
 }
 @media (min-width: 1280px) {
   .footer-page__box--contact {
     margin-left: 4.5em;
     padding-left: 4.75em;
+    padding-right: 0em;
   }
 }
 .footer-page__box--hours {
@@ -126,6 +156,12 @@ body {
     padding: 0em 1.25em;
   }
 }
+@media (min-width: 320px) {
+  .footer-page__box--social {
+    margin-right: 0em;
+    padding: 1.75em 1.5em 1.75em 1em;
+  }
+}
 @media (min-width: 768px) {
   .footer-page__box--social {
     margin-right: 0em;
@@ -142,28 +178,69 @@ body {
   color: #335576;
   padding: 1em 1em 1em 0em;
 }
+@media (min-width: 320px) {
+  .footer-page__title {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer-page__title {
+    font-size: 1.5rem;
+  }
+}
 .footer-page__subtitle {
   color: #DB7A4E;
-  font-size: 0.6rem;
   font-weight: 500;
   padding-bottom: 1em;
+}
+@media (min-width: 320px) {
+  .footer-page__subtitle {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer-page__subtitle {
+    font-size: 0.6rem;
+  }
 }
 .footer-page__paragraph {
   color: #335576;
   font-size: 0.9rem;
   padding-bottom: 1.5em; /*Customized padding to match display as in the Mock document adding precise padding bottom*/
 }
+@media (min-width: 320px) {
+  .footer-page__paragraph {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer-page__paragraph {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer-page__paragraph {
+    font-size: 0.9rem;
+  }
+}
 .footer-page__logo {
-  height: 1.5rem;
   margin-top: 0.75em;
+}
+@media (min-width: 320px) {
+  .footer-page__logo {
+    margin-right: 0.5em;
+    height: 1rem;
+  }
 }
 @media (min-width: 768px) {
   .footer-page__logo {
+    height: 1.5rem;
     margin-right: 0.5em;
   }
 }
 @media (min-width: 1280px) {
   .footer-page__logo {
+    height: 1.5rem;
     margin-right: 2em;
   }
 }
@@ -201,6 +278,13 @@ body {
 .destination__container__title {
   color: #FFFFFF;
 }
+@media (min-width: 320px) {
+  .destination__container__title {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1.75em;
+  }
+}
 @media (min-width: 768px) {
   .destination__container__title {
     font-size: 5rem;
@@ -226,6 +310,12 @@ body {
   border-radius: 0.3125rem;
   text-align: center;
 }
+@media (min-width: 320px) {
+  .destination__container__itinerary__card {
+    margin: 0.5em;
+    width: 40vmax;
+  }
+}
 @media (min-width: 768px) {
   .destination__container__itinerary__card {
     margin: 1.5em;
@@ -243,6 +333,16 @@ body {
   text-align: center;
   margin-bottom: 1.5em; /*added to include space between day, and activities. This to make it look as the Mock doc*/
 }
+@media (min-width: 320px) {
+  .destination__container__itinerary__card__title {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) {
+  .destination__container__itinerary__card__title {
+    font-size: 1.17rem;
+  }
+}
 .destination__container__itinerary__card--list {
   list-style-type: none;
 }
@@ -250,5 +350,14 @@ body {
   margin: 1em 0em; /*Used a 1em margin to match Mock document*/
   padding: 1em 0em; /*Used a 1em padding to match Mock document*/
   background-color: #FEFAF5;
-  font-size: 1em;
+}
+@media (min-width: 320px) {
+  .destination__container__itinerary__card--activities {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) {
+  .destination__container__itinerary__card--activities {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=destinations.css.map */

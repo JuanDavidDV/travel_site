@@ -24,6 +24,12 @@ body {
 .header-page__link__title {
   color: #335576;
 }
+@media (min-width: 320px) {
+  .header-page__link__title {
+    font-size: 0.8rem;
+    margin-right: 2.5em; /*Customized margin applied to obtain spacing between nav section (in the middle between logo ("Travel Site" and nav), this to macth Mock document display*/
+  }
+}
 @media (min-width: 768px) {
   .header-page__link__title {
     font-size: 1.5rem;
@@ -39,6 +45,11 @@ body {
 .header-page__navigation {
   display: inline-block;
 }
+@media (min-width: 320px) {
+  .header-page__navigation {
+    margin: 0em 0.1em; /*Adds spacing between nav links */
+  }
+}
 @media (min-width: 768px) {
   .header-page__navigation {
     margin: 0em 0.25em; /*Adds spacing between nav links */
@@ -53,6 +64,11 @@ body {
   text-decoration: none;
   color: #000000;
 }
+@media (min-width: 320px) {
+  .header-page__navigation__link {
+    font-size: 0.6rem;
+  }
+}
 @media (min-width: 768px) {
   .header-page__navigation__link {
     font-size: 1rem;
@@ -65,6 +81,11 @@ body {
 }
 .header-page__navigation__link:hover {
   border-bottom: 0.2rem solid rgb(137, 137, 204);
+}
+@media (min-width: 320px) {
+  .header-page__navigation__link:hover {
+    padding-bottom: 1em;
+  }
 }
 @media (min-width: 768px) {
   .header-page__navigation__link:hover {
@@ -95,16 +116,25 @@ body {
 .footer-page__box--contact {
   padding: 1.75em 0em 1.75em 4.75em; /*Customized padding to match footer display as in the Mock document*/
 }
+@media (min-width: 320px) {
+  .footer-page__box--contact {
+    margin-left: 0em;
+    padding-left: 0.25em;
+    padding-right: 2em;
+  }
+}
 @media (min-width: 768px) {
   .footer-page__box--contact {
     margin-left: 0em;
     padding-left: 1.5em;
+    padding-right: 0em;
   }
 }
 @media (min-width: 1280px) {
   .footer-page__box--contact {
     margin-left: 4.5em;
     padding-left: 4.75em;
+    padding-right: 0em;
   }
 }
 .footer-page__box--hours {
@@ -126,6 +156,12 @@ body {
     padding: 0em 1.25em;
   }
 }
+@media (min-width: 320px) {
+  .footer-page__box--social {
+    margin-right: 0em;
+    padding: 1.75em 1.5em 1.75em 1em;
+  }
+}
 @media (min-width: 768px) {
   .footer-page__box--social {
     margin-right: 0em;
@@ -142,28 +178,69 @@ body {
   color: #335576;
   padding: 1em 1em 1em 0em;
 }
+@media (min-width: 320px) {
+  .footer-page__title {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer-page__title {
+    font-size: 1.5rem;
+  }
+}
 .footer-page__subtitle {
   color: #DB7A4E;
-  font-size: 0.6rem;
   font-weight: 500;
   padding-bottom: 1em;
+}
+@media (min-width: 320px) {
+  .footer-page__subtitle {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer-page__subtitle {
+    font-size: 0.6rem;
+  }
 }
 .footer-page__paragraph {
   color: #335576;
   font-size: 0.9rem;
   padding-bottom: 1.5em; /*Customized padding to match display as in the Mock document adding precise padding bottom*/
 }
+@media (min-width: 320px) {
+  .footer-page__paragraph {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer-page__paragraph {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer-page__paragraph {
+    font-size: 0.9rem;
+  }
+}
 .footer-page__logo {
-  height: 1.5rem;
   margin-top: 0.75em;
+}
+@media (min-width: 320px) {
+  .footer-page__logo {
+    margin-right: 0.5em;
+    height: 1rem;
+  }
 }
 @media (min-width: 768px) {
   .footer-page__logo {
+    height: 1.5rem;
     margin-right: 0.5em;
   }
 }
 @media (min-width: 1280px) {
   .footer-page__logo {
+    height: 1.5rem;
     margin-right: 2em;
   }
 }
@@ -184,17 +261,38 @@ body {
 label { /*Style for questions*/
   color: #DB7A4E;
 }
+@media (min-width: 320px) {
+  label {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 768px) {
+  label {
+    font-size: 1rem;
+  }
+}
 
 select, input { /*Style for input (multiple choice answer) and style input entered by the user*/
   color: #335576;
-  font-size: 1em;
+}
+@media (min-width: 320px) {
+  select, input {
+    font-size: 0.75rem;
+    margin-left: 3em;
+  }
+}
+@media (min-width: 768px) {
+  select, input {
+    font-size: 1rem;
+    margin-left: 0em;
+  }
 }
 
 .registration {
   width: 100%;
   background-color: #FEFAF5;
 }
-@media (min-width: 768px) {
+@media (min-width: 320px) {
   .registration {
     display: block;
   }
@@ -207,9 +305,18 @@ select, input { /*Style for input (multiple choice answer) and style input enter
 }
 .registration__info__title {
   color: #335576;
-  font-size: 2.3rem;
   padding: 1.25em;
   text-align: center;
+}
+@media (min-width: 320px) {
+  .registration__info__title {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .registration__info__title {
+    font-size: 2.3rem;
+  }
 }
 .registration__info__destination-select {
   margin-left: 3em;
@@ -233,10 +340,9 @@ select, input { /*Style for input (multiple choice answer) and style input enter
 .registration__pictures {
   display: flex;
 }
-@media (min-width: 768px) {
+@media (min-width: 320px) {
   .registration__pictures {
     justify-content: center;
-    padding: 1.25em;
   }
 }
 @media (min-width: 1280px) {
@@ -244,9 +350,9 @@ select, input { /*Style for input (multiple choice answer) and style input enter
     align-items: center;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 320px) {
   .registration__pictures__link {
-    margin: 1.25em;
+    margin: 0.5em;
   }
 }
 @media (min-width: 1280px) {
@@ -254,7 +360,7 @@ select, input { /*Style for input (multiple choice answer) and style input enter
     margin: 0em;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 320px) {
   .registration__pictures__images {
     height: 40vw;
   }
