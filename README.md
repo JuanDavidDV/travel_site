@@ -10,4 +10,4 @@ A responsive travel website used to demonstrate comprehension of Flexbox, SASS, 
 </p>
 
 # Website 
-Click the following link to access the website: [https://brainflix-juandavid.netlify.app/](https://travel-site-juan-david.netlify.app/)
+Click the following link to access the website: https://travel-site-juan-david.netlify.app/
