@@ -8,3 +8,6 @@ A responsive travel website used to demonstrate comprehension of Flexbox, SASS, 
     <img src="https://skillicons.dev/icons?i=html,css,sass" />
   </a>
 </p>
+
+# Website 
+Click the following link to access the website: [https://brainflix-juandavid.netlify.app/](https://travel-site-juan-david.netlify.app/)
